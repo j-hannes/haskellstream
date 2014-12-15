@@ -22,6 +22,13 @@ Or shortcut imports like:
     var c = require('haskellscript').core;
     console.log(c.succ(7)); // 8
 
+Functions covered
+-----------------
+
+* core
+  * succ :: Number -> Number
+  * min :: Number -> Number -> Number
+  * max :: Number -> Number -> Number
 
 ToDo
 ----
