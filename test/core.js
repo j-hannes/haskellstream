@@ -1,52 +1,57 @@
 /* jshint mocha:true */
-var expect = require('chai').expect;
-var core = require('../lib/core.js');
+var expect = require('chai').expect
+var core = require('../lib/core.js')
 
 describe('core', function() {
   describe('succ(8)', function() {
     it('returns 9', function() {
-      expect(core.succ(8)).to.be.equal(9);
-    });
-  });
+      expect(core.succ(8)).to.be.equal(9)
+    })
+  })
   describe('min(9,10)', function() {
     it('returns 9', function() {
-      expect(core.min(9,10)).to.be.equal(9);
-    });
-  });
+      expect(core.min(9,10)).to.be.equal(9)
+    })
+  })
   describe('max(100,101)', function() {
     it('returns 101', function() {
-      expect(core.max(100,101)).to.be.equal(101);
-    });
-  });
+      expect(core.max(100,101)).to.be.equal(101)
+    })
+  })
   describe('div(92, 10)', function() {
     it('returns 9', function() {
-      expect(core.div(92,10)).to.be.equal(9);
-    });
-  });
+      expect(core.div(92,10)).to.be.equal(9)
+    })
+  })
   describe('ifThenElse(true,1,2)', function() {
     it('returns 1', function() {
-      expect(core.ifThenElse(true,1,2)).to.be.equal(1);
-    });
-  });
+      expect(core.ifThenElse(true,1,2)).to.be.equal(1)
+    })
+  })
   describe('ifThenElse(false,1,2)', function() {
     it('returns 2', function() {
-      expect(core.ifThenElse(false,1,2)).to.be.equal(2);
-    });
-  });
+      expect(core.ifThenElse(false,1,2)).to.be.equal(2)
+    })
+  })
 
   // Lists
   describe('append([1,2],[3,4])', function() {
     it('returns [1,2,3,4]', function() {
-      expect(core.append([1,2],[3,4])).to.deep.equal([1,2,3,4]);
-    });
-  });
+      expect(core.append([1,2],[3,4])).to.deep.equal([1,2,3,4])
+    })
+  })
+  describe('cons(1,[2,3])', function() {
+    it('returns [1,2,3]', function() {
+      expect(core.cons(1, [2,3])).to.be.deep.equal([1,2,3])
+    })
+  })
 
   /*
   describe('', function() {
     it('', function() {
-      expect().to.be.equal();
-    });
-  });
+      expect().to.be.equal()
+    })
+  })
   */
-});
+})
 
