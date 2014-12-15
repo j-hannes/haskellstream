@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var repl = require('repl')
+
+var hs = require('./hs')
+var c = hs.core
+
+var replServer = repl.start({
+  prompt: 'hsci> ',
+})
+
+replServer.context.hs = hs
+replServer.context.c = c
+

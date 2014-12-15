@@ -31,6 +31,11 @@ Functions covered
   * [max](lib/core.js#L13) :: Number -> Number -> Number
   * [div](lib/core.js#L21) :: Int -> Int -> Int
 
+Command Line Interface / REPL
+-----------------------------
+
+Very simple! But helpful. ;) Run `./hsci` to have hs loaded in node's repl.
+
 ToDo
 ----
 
