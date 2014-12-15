@@ -58,6 +58,16 @@ describe('core', function() {
     })
   })
 
+  describe('index([1,2,3,4], 2)', function() {
+    it('returns 3', function() {
+      var xs = [1,2,3,4]
+      // test
+      expect(core.index(xs, 2)).to.be.equal(3)
+      // immutability check
+      expect(xs).to.be.deep.equal([1,2,3,4])
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {

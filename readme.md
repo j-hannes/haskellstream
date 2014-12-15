@@ -39,6 +39,7 @@ Functions covered
   * [div](lib/core.js#L21) :: Int -> Int -> Int
   * [append](lib/core.js#L33) :: [a] -> [a] -> [a]
   * [cons](lib/core.js#L37) :: a -> [a] -> [a]
+  * [index](lib/core.js#L41) :: [a] -> Int -> a
 
 Development
 ===========
