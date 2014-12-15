@@ -14,16 +14,16 @@ Examples
 Import whole library and access functions from modules.
 
 ```JavaScript
-    var hs = require('haskellscript');
-    console.log(hs.core.succ(8)); // 9
-    console.log(hs.core.min(9,10)); // 9
+var hs = require('haskellscript');
+console.log(hs.core.succ(8)); // 9
+console.log(hs.core.min(9,10)); // 9
 ```
 
 Or shortcut imports like:
 
 ```JavaScript
-    var c = require('haskellscript').core;
-    console.log(c.succ(7)); // 8
+var c = require('haskellscript').core;
+console.log(c.succ(7)); // 8
 ```
 
 Functions covered
