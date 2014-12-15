@@ -41,7 +41,8 @@ Functions covered
   * [cons](lib/core.js#L37) :: a -> [a] -> [a]
   * [index](lib/core.js#L41) :: [a] -> Int -> a
   * [head](lib/core.js#L45) :: [a] -> a
-  * [tail](lib/core.js#L49) :: [a] -> a
+  * [tail](lib/core.js#L49) :: [a] -> [a]
+  * [last](lib/core.js#L53) :: [a] -> a
 
 Development
 ===========

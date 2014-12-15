@@ -78,6 +78,14 @@ describe('core', function() {
     })
   })
 
+  describe('last([1,2,3])', function() {
+    it('returns 3', function() {
+      var xs = [1,2,3]
+      expect(core.last(xs)).to.be.equal(3)
+      expect(xs).to.be.deep.equal([1,2,3])
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {
