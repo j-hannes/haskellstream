@@ -33,6 +33,14 @@ describe('core', function() {
       expect(core.ifThenElse(false,1,2)).to.be.equal(2);
     });
   });
+
+  // Lists
+  describe('cons([1,2],[3,4])', function() {
+    it('returns [1,2,3,4]', function() {
+      expect(core.cons([1,2],[3,4])).to.deep.equal([1,2,3,4]);
+    });
+  });
+
   /*
   describe('', function() {
     it('', function() {
