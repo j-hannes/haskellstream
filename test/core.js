@@ -13,5 +13,10 @@ describe('core', function() {
       expect(core.min(9,10)).to.be.equal(9);
     });
   });
+  describe('max(100,101)', function() {
+    it('returns 101', function() {
+      expect(core.max(100,101)).to.be.equal(101);
+    });
+  });
 });
 
