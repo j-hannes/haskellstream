@@ -23,6 +23,16 @@ describe('core', function() {
       expect(core.div(92,10)).to.be.equal(9);
     });
   });
+  describe('ifThenElse(true,1,2)', function() {
+    it('returns 1', function() {
+      expect(core.ifThenElse(true,1,2)).to.be.equal(1);
+    });
+  });
+  describe('ifThenElse(false,1,2)', function() {
+    it('returns 2', function() {
+      expect(core.ifThenElse(false,1,2)).to.be.equal(2);
+    });
+  });
   /*
   describe('', function() {
     it('', function() {
