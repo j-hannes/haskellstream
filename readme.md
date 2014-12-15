@@ -25,8 +25,8 @@ Or shortcut imports like:
 Functions covered
 -----------------
 
-* core
-  * succ :: Number -> Number
+* [core](lib/core.js)
+  * [succ](lib/core.js#L1) :: Number -> Number
   * min :: Number -> Number -> Number
   * max :: Number -> Number -> Number
 
