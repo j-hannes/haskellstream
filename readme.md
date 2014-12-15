@@ -40,6 +40,7 @@ Functions covered
   * [append](lib/core.js#L33) :: [a] -> [a] -> [a]
   * [cons](lib/core.js#L37) :: a -> [a] -> [a]
   * [index](lib/core.js#L41) :: [a] -> Int -> a
+  * [head](lib/core.js#L45) :: [a] -> a
 
 Development
 ===========

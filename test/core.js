@@ -39,9 +39,7 @@ describe('core', function() {
     it('returns [1,2,3,4]', function() {
       var xs = [1,2]
       var ys = [3,4]
-      // test
       expect(core.append(xs,ys)).to.be.deep.equal([1,2,3,4])
-      // immutability check
       expect(xs).to.be.deep.equal([1,2])
       expect(ys).to.be.deep.equal([3,4])
     })
@@ -50,9 +48,7 @@ describe('core', function() {
     it('returns [1,2,3]', function() {
       var x = 1
       var xs = [2,3]
-      // test
       expect(core.cons(1, [2,3])).to.be.deep.equal([1,2,3])
-      // immutability check
       expect(x).to.be.equal(1)
       expect(xs).to.be.deep.equal([2,3])
     })
@@ -61,10 +57,16 @@ describe('core', function() {
   describe('index([1,2,3,4], 2)', function() {
     it('returns 3', function() {
       var xs = [1,2,3,4]
-      // test
       expect(core.index(xs, 2)).to.be.equal(3)
-      // immutability check
       expect(xs).to.be.deep.equal([1,2,3,4])
+    })
+  })
+
+  describe('head([1,2,3])', function() {
+    it('returns 1', function() {
+      var xs = [1,2,3]
+      expect(core.head(xs)).to.be.equal(1)
+      expect(xs).to.be.deep.equal([1,2,3])
     })
   })
 
