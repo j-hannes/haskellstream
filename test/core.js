@@ -86,6 +86,14 @@ describe('core', function() {
     })
   })
 
+  describe('init([1,2,3])', function() {
+    it('returns [1,2]', function() {
+      var xs = [1,2,3]
+      expect(core.init(xs)).to.be.deep.equal([1,2])
+      expect(xs).to.be.deep.equal([1,2,3])
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {

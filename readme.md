@@ -43,6 +43,7 @@ Functions covered
   * [head](lib/core.js#L45) :: [a] -> a
   * [tail](lib/core.js#L49) :: [a] -> [a]
   * [last](lib/core.js#L53) :: [a] -> a
+  * [init](lib/core.js#L57) :: [a] -> [a]
 
 Development
 ===========
