@@ -37,6 +37,7 @@ Functions covered
   * [min](lib/core.js#L5) :: Number -> Number -> Number
   * [max](lib/core.js#L13) :: Number -> Number -> Number
   * [div](lib/core.js#L21) :: Int -> Int -> Int
+  * [append](lib/core.js#L33) :: [a] -> [a] -> [a]
 
 Development
 ===========

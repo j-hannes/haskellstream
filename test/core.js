@@ -35,9 +35,9 @@ describe('core', function() {
   });
 
   // Lists
-  describe('cons([1,2],[3,4])', function() {
+  describe('append([1,2],[3,4])', function() {
     it('returns [1,2,3,4]', function() {
-      expect(core.cons([1,2],[3,4])).to.deep.equal([1,2,3,4]);
+      expect(core.append([1,2],[3,4])).to.deep.equal([1,2,3,4]);
     });
   });
 
