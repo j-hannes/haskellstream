@@ -37,12 +37,24 @@ describe('core', function() {
   // Lists
   describe('append([1,2],[3,4])', function() {
     it('returns [1,2,3,4]', function() {
-      expect(core.append([1,2],[3,4])).to.deep.equal([1,2,3,4])
+      var xs = [1,2]
+      var ys = [3,4]
+      // test
+      expect(core.append(xs,ys)).to.be.deep.equal([1,2,3,4])
+      // immutability check
+      expect(xs).to.be.deep.equal([1,2])
+      expect(ys).to.be.deep.equal([3,4])
     })
   })
   describe('cons(1,[2,3])', function() {
     it('returns [1,2,3]', function() {
+      var x = 1
+      var xs = [2,3]
+      // test
       expect(core.cons(1, [2,3])).to.be.deep.equal([1,2,3])
+      // immutability check
+      expect(x).to.be.equal(1)
+      expect(xs).to.be.deep.equal([2,3])
     })
   })
 

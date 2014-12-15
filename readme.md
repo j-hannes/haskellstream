@@ -1,7 +1,7 @@
 Haskellstream
 =============
 
-Let's write JavaScript programs like we would write Haskell programs. 
+Let's write JavaScript programs like we would write Haskell programs. Pure (immutable, referential transparent, lazy?). No side effects. Fully tested.
 
 Use
 ===
