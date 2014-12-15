@@ -27,8 +27,8 @@ Functions covered
 
 * [core](lib/core.js)
   * [succ](lib/core.js#L1) :: Number -> Number
-  * min :: Number -> Number -> Number
-  * max :: Number -> Number -> Number
+  * [min](lib/core.js#L5) :: Number -> Number -> Number
+  * [max](lib/core.js#L13) :: Number -> Number -> Number
 
 ToDo
 ----
