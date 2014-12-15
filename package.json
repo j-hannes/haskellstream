@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/j-hannes/haskellstream/issues"
   },
-  "homepage": "https://github.com/j-hannes/haskellstream"
+  "homepage": "https://github.com/j-hannes/haskellstream",
+  "devDependencies": {
+    "chai": "^1.10.0"
+  }
 }
