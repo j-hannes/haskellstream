@@ -70,6 +70,14 @@ describe('core', function() {
     })
   })
 
+  describe('tail([1,2,3])', function() {
+    it('returns [2,3]', function() {
+      var xs = [1,2,3]
+      expect(core.tail(xs)).to.be.deep.equal([2,3])
+      expect(xs).to.be.deep.equal([1,2,3])
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {
