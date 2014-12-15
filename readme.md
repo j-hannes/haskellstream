@@ -29,12 +29,16 @@ Functions covered
   * [succ](lib/core.js#L1) :: Number -> Number
   * [min](lib/core.js#L5) :: Number -> Number -> Number
   * [max](lib/core.js#L13) :: Number -> Number -> Number
+  * [div](lib/core.js#L21) :: Int -> Int -> Int
 
 ToDo
 ----
 
 For now I am trying to create the core (prelude, which should be named core)
 module. This will be followed by other modules (list, ...).
+
+Re types I will see what is possible to implement. Functors, Monads etc. will
+probably work but not sure how it does with type classes.
 
 Testing
 -------

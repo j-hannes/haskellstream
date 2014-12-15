@@ -18,5 +18,17 @@ describe('core', function() {
       expect(core.max(100,101)).to.be.equal(101);
     });
   });
+  describe('div(92, 10)', function() {
+    it('returns 9', function() {
+      expect(core.div(92,10)).to.be.equal(9);
+    });
+  });
+  /*
+  describe('', function() {
+    it('', function() {
+      expect().to.be.equal();
+    });
+  });
+  */
 });
 
