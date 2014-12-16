@@ -39,12 +39,14 @@ Functions covered
 * [base](lib/base.js)
   * language constructs
     * [ifThenElse](lib/base.js#L5) :: Bool -> * -> *
+  * elementary functions
     * [succ](lib/base.js#L16) :: Number -> Number
     * [min](lib/base.js#L21) :: Number -> Number -> Number
     * [max](lib/base.js#L30) :: Number -> Number -> Number
     * [add](lib/base.js#L39) :: Number -> Number -> Number
     * [subtract](lib/base.js#L44) :: Number -> Number -> Number
     * [div](lib/base.js#L49) :: Int -> Int -> Int
+  * list functions
     * [empty](lib/base.js#L56) :: [a] -> Bool
     * [index](lib/base.js#L61) :: [a] -> Int -> a
     * [length](lib/base.js#L66) :: [a] -> Int
@@ -54,9 +56,8 @@ Functions covered
     * [init](lib/base.js#L86) :: [a] -> [a]
     * [reduce](lib/base.js#L91) :: (a -> b -> a) -> a -> [b] -> a
     * [cons](lib/base.js#L100) :: a -> [a] -> [a]
-  * higher order
-    * [append](lib/base.js#L107) :: [a] -> [a] -> [a]
-    * [sum](lib/base.js#L112) :: [Number] -> Number
+    * [append](lib/base.js#L105) :: [a] -> [a] -> [a]
+    * [sum](lib/base.js#L110) :: [Number] -> Number
 
 Development
 ===========
