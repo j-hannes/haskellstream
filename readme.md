@@ -33,24 +33,24 @@ console.log(sum([1,2,3,4])); // 10
 Functions covered
 -----------------
 
-* [core](lib/core.js)
-  * [succ](lib/core.js#L1) :: Number -> Number
-  * [min](lib/core.js#L5) :: Number -> Number -> Number
-  * [max](lib/core.js#L13) :: Number -> Number -> Number
-  * [div](lib/core.js#L21) :: Int -> Int -> Int
-  * [append](lib/core.js#L33) :: [a] -> [a] -> [a]
-  * [cons](lib/core.js#L37) :: a -> [a] -> [a]
-  * [index](lib/core.js#L41) :: [a] -> Int -> a
-  * [head](lib/core.js#L45) :: [a] -> a
-  * [tail](lib/core.js#L49) :: [a] -> [a]
-  * [last](lib/core.js#L53) :: [a] -> a
-  * [init](lib/core.js#L57) :: [a] -> [a]
-  * [length](lib/core.js#L61) :: [a] -> Int
-  * [null](lib/core.js#L65) :: [a] -> Bool
-  * [add](lib/core.js#L69) :: Number -> Number -> Number
-  * [subtract](lib/core.js#L73) :: Number -> Number -> Number
-  * [reduce](lib/core.js#L77) :: (a -> b -> a) -> a -> [b] -> a
-  * [sum](lib/core.js#L85) :: [Number] -> Number
+* [base](lib/base.js)
+  * [succ](lib/base.js#L1) :: Number -> Number
+  * [min](lib/base.js#L5) :: Number -> Number -> Number
+  * [max](lib/base.js#L13) :: Number -> Number -> Number
+  * [div](lib/base.js#L21) :: Int -> Int -> Int
+  * [append](lib/base.js#L33) :: [a] -> [a] -> [a]
+  * [cons](lib/base.js#L37) :: a -> [a] -> [a]
+  * [index](lib/base.js#L41) :: [a] -> Int -> a
+  * [head](lib/base.js#L45) :: [a] -> a
+  * [tail](lib/base.js#L49) :: [a] -> [a]
+  * [last](lib/base.js#L53) :: [a] -> a
+  * [init](lib/base.js#L57) :: [a] -> [a]
+  * [length](lib/base.js#L61) :: [a] -> Int
+  * [null](lib/base.js#L65) :: [a] -> Bool
+  * [add](lib/base.js#L69) :: Number -> Number -> Number
+  * [subtract](lib/base.js#L73) :: Number -> Number -> Number
+  * [reduce](lib/base.js#L77) :: (a -> b -> a) -> a -> [b] -> a
+  * [sum](lib/base.js#L85) :: [Number] -> Number
 
 Development
 ===========
@@ -63,7 +63,7 @@ Very simple! But helpful. ;) Run `./hsci` to have hs loaded in node's repl.
 ToDo
 ----
 
-For now I am trying to create the core (prelude, which should be named core)
+For now I am trying to create the base (prelude, which should be named base)
 module. This will be followed by other modules (list, ...).
 
 Re types I will see what is possible to implement. Functors, Monads etc. will
