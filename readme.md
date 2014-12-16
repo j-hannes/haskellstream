@@ -1,7 +1,10 @@
 Haskellstream
 =============
 
-Let's write JavaScript programs like we would write Haskell programs.
+A simple library to transfer functional programming styles from Haskell into 
+JavaScript programs. Starting with functions arounds lists and map and reduce
+functions which are easily partially appliable. Aim is to support functional
+reactive programming / streams / pipes.
 
 Use
 ===
