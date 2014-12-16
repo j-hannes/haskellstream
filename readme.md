@@ -61,7 +61,7 @@ Development
 Command Line Interface / REPL
 -----------------------------
 
-Very simple! But helpful. ;) Run `./hsci` to have hs loaded in node's repl.
+Run `./hsci` to have haskellstream loaded in node's repl.
 
 ToDo
 ----
