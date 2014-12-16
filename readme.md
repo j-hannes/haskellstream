@@ -18,16 +18,17 @@ Import whole library and access functions from modules.
 
 ```JavaScript
 var hs = require('haskellstream');
-console.log(hs.core.succ(8)); // 9
-console.log(hs.core.min(9,10)); // 9
+console.log(hs.succ(8)); // 9
+console.log(hs.min(23, 42)); // 23
+console.log(hs.reduce(add, 0, [1,2,3,4])); // 10
 ```
 
-Or shortcut imports like:
+All functions are higher order functions, so they can be partially applied:
 
 ```JavaScript
-var c = require('haskellstream').core;
-console.log(c.succ(7)); // 8
-```
+var sum = hs.reduce(add, 0);
+console.log(sum([1,2,3,4])); // 10
+
 
 Functions covered
 -----------------
