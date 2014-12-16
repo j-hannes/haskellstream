@@ -34,23 +34,26 @@ Functions covered
 -----------------
 
 * [base](lib/base.js)
-  * [succ](lib/base.js#L1) :: Number -> Number
-  * [min](lib/base.js#L5) :: Number -> Number -> Number
-  * [max](lib/base.js#L13) :: Number -> Number -> Number
-  * [div](lib/base.js#L21) :: Int -> Int -> Int
-  * [append](lib/base.js#L33) :: [a] -> [a] -> [a]
-  * [cons](lib/base.js#L37) :: a -> [a] -> [a]
-  * [index](lib/base.js#L41) :: [a] -> Int -> a
-  * [head](lib/base.js#L45) :: [a] -> a
-  * [tail](lib/base.js#L49) :: [a] -> [a]
-  * [last](lib/base.js#L53) :: [a] -> a
-  * [init](lib/base.js#L57) :: [a] -> [a]
-  * [length](lib/base.js#L61) :: [a] -> Int
-  * [null](lib/base.js#L65) :: [a] -> Bool
-  * [add](lib/base.js#L69) :: Number -> Number -> Number
-  * [subtract](lib/base.js#L73) :: Number -> Number -> Number
-  * [reduce](lib/base.js#L77) :: (a -> b -> a) -> a -> [b] -> a
-  * [sum](lib/base.js#L85) :: [Number] -> Number
+  * language constructs
+    * [ifThenElse](lib/base.js#L5) :: Bool -> * -> *
+    * [succ](lib/base.js#L16) :: Number -> Number
+    * [min](lib/base.js#L21) :: Number -> Number -> Number
+    * [max](lib/base.js#L30) :: Number -> Number -> Number
+    * [add](lib/base.js#L39) :: Number -> Number -> Number
+    * [subtract](lib/base.js#L44) :: Number -> Number -> Number
+    * [div](lib/base.js#L49) :: Int -> Int -> Int
+    * [empty](lib/base.js#L56) :: [a] -> Bool
+    * [index](lib/base.js#L61) :: [a] -> Int -> a
+    * [length](lib/base.js#L66) :: [a] -> Int
+    * [head](lib/base.js#L71) :: [a] -> a
+    * [tail](lib/base.js#L76) :: [a] -> [a]
+    * [last](lib/base.js#L81) :: [a] -> a
+    * [init](lib/base.js#L86) :: [a] -> [a]
+    * [reduce](lib/base.js#L91) :: (a -> b -> a) -> a -> [b] -> a
+    * [cons](lib/base.js#L100) :: a -> [a] -> [a]
+  * higher order
+    * [append](lib/base.js#L107) :: [a] -> [a] -> [a]
+    * [sum](lib/base.js#L112) :: [Number] -> Number
 
 Development
 ===========
