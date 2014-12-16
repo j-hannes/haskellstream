@@ -112,6 +112,30 @@ describe('core', function() {
       expect(core.null([42])).to.be.false
     })
   })
+  describe('add(1,2)', function() {
+    it('returns 3', function() {
+      expect(core.add(1,2)).to.be.equal(3)
+    })
+  })
+  describe('reduce(add, 0, [1,2,3,4])', function() {
+    it('returns 10', function() {
+      var xs = [1,2,3,4]
+      expect(core.reduce(core.add, 0, xs)).to.be.equal(10)
+      expect(xs).to.be.deep.equal([1,2,3,4])
+    })
+  })
+  describe('sum([1,2,3,4,5])', function() {
+    it('returns 15', function() {
+      var xs = [1,2,3,4,5]
+      expect(core.sum(xs)).to.be.equal(15)
+      expect(xs).to.be.deep.equal([1,2,3,4,5])
+    })
+  })
+  describe('subtract(2,3)', function() {
+    it('returns 1', function() {
+      expect(core.subtract(2,3)).to.be.equal(1)
+    })
+  })
 
   /*
   describe('', function() {

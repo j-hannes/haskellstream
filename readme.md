@@ -46,6 +46,10 @@ Functions covered
   * [init](lib/core.js#L57) :: [a] -> [a]
   * [length](lib/core.js#L61) :: [a] -> Int
   * [null](lib/core.js#L65) :: [a] -> Bool
+  * [add](lib/core.js#L69) :: Number -> Number -> Number
+  * [subtract](lib/core.js#L73) :: Number -> Number -> Number
+  * [reduce](lib/core.js#L77) :: (a -> b -> a) -> a -> [b] -> a
+  * [sum](lib/core.js#L85) :: [Number] -> Number
 
 Development
 ===========
