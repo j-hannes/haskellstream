@@ -94,6 +94,14 @@ describe('core', function() {
     })
   })
 
+  describe('length([1,3])', function() {
+    it('returns 2', function() {
+      var xs = [1,3]
+      expect(core.length(xs)).to.be.equal(2)
+      expect(xs).to.be.deep.equal([1,3])
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {
