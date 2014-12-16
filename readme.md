@@ -28,7 +28,7 @@ All functions are higher order functions, so they can be partially applied:
 ```JavaScript
 var sum = hs.reduce(add, 0);
 console.log(sum([1,2,3,4])); // 10
-
+```
 
 Functions covered
 -----------------
