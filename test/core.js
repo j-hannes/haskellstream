@@ -102,6 +102,17 @@ describe('core', function() {
     })
   })
 
+  describe('null([])', function() {
+    it('returns true', function() {
+      expect(core.null([])).to.be.true
+    })
+  })
+  describe('null([42])', function() {
+    it('returns false', function() {
+      expect(core.null([42])).to.be.false
+    })
+  })
+
   /*
   describe('', function() {
     it('', function() {

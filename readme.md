@@ -45,6 +45,7 @@ Functions covered
   * [last](lib/core.js#L53) :: [a] -> a
   * [init](lib/core.js#L57) :: [a] -> [a]
   * [length](lib/core.js#L61) :: [a] -> Int
+  * [null](lib/core.js#L65) :: [a] -> Bool
 
 Development
 ===========
