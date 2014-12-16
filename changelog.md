@@ -1,3 +1,15 @@
+0.1.0
+-----
+
+* renamed module "core" to "base"
+* reduced module namespace (access via hs.core.fn is now simply hs.fn)
+* use the ramda library to borrow the curry function
+* reorder and group functions in base
+* refactor functions "append" and "sum" alike whyfp
+* rename list function "null" to "empty"
+* declare functions locally to reduce namespace clutter when use internally
+* all functions can now be partially applied (curried)
+
 0.0.3
 -----
 
