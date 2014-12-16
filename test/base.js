@@ -102,14 +102,14 @@ describe('hs', function() {
     })
   })
 
-  describe('null([])', function() {
+  describe('empty([])', function() {
     it('returns true', function() {
-      expect(hs.null([])).to.be.true
+      expect(hs.empty([])).to.be.true
     })
   })
-  describe('null([42])', function() {
+  describe('empty([42])', function() {
     it('returns false', function() {
-      expect(hs.null([42])).to.be.false
+      expect(hs.empty([42])).to.be.false
     })
   })
   describe('add(1,2)', function() {
