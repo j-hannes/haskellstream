@@ -1,3 +1,13 @@
+0.0.3
+-----
+
+* added core.length
+* added core.null
+* added core.add
+* added core.subtract
+* added core.reduce
+* added core.sum
+
 0.0.2
 -----
 
