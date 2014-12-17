@@ -41,9 +41,9 @@ Functions covered
 
 * [core](lib/core.js)
   * [curry](lib/core.js#L12)
-  * [compose](lib/core.js#L5) (b -> c) -> (a -> b) -> a -> c
-  * [ifThenElse](lib/core.js#L5) :: Bool -> a -> a
-  * [not](lib/core.js#L5) :: Bool -> Bool
+  * [compose](lib/core.js#L32) (b -> c) -> (a -> b) -> a -> c
+  * [ifThenElse](lib/core.js#L40) :: Bool -> a -> a
+  * [not](lib/core.js#L52) :: Bool -> Bool
 * [base](lib/base.js)
   * [succ](lib/base.js#L3) :: Number -> Number
   * [min](lib/base.js#L9) :: Number -> Number -> Number
