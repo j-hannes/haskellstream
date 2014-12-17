@@ -53,6 +53,7 @@ Functions covered
   * [div](lib/base.js#L36) :: Number -> Number -> Number
 * [list](lib/list.js)
   * [length](lib/list.js#L3) :: [a] -> Int
+  * [empty](lib/list.js#L8) :: [a] -> Bool
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
