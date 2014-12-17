@@ -17,47 +17,49 @@ Install
 Examples
 --------
 
-Import whole library and access functions from modules.
+Curry:
 
 ```JavaScript
 var hs = require('haskellstream');
-console.log(hs.succ(8)); // 9
-console.log(hs.min(23, 42)); // 23
-console.log(hs.reduce(add, 0, [1,2,3,4])); // 10
-```
+var curry = hs.core.curry
 
-All functions are higher order functions, so they can be partially applied:
+var pair = function(a, b) {return [a, b])
+
+var pairWithTwo = pair(2)
+console.log(pairWithTwo) // [Function]
+console.log(pairWithTwo(3)) // [2,3]
+```
 
 ```JavaScript
-var sum = hs.reduce(add, 0);
-console.log(sum([1,2,3,4])); // 10
+var hs = require('haskellstream');
+var compose = hs.core.compose
+var add = hs.base.add
+
+var doubleIt = function(x) {return x + x}
+var addThree = add(3)
+
+var doubleAndAddThree = compose(doubleIt, addThree)
+console.log(doubleAndAddThree(5)) // 13
 ```
+
+In comparison to Haskell JavaScript is already cluttered up with lots of
+parenthesis commas etc. and that imported functions are usually namespaced. This
+noise can be reduced by assigning functions from their namespace to their plain
+name at the beginning of each module.
+
 
 Functions covered
 -----------------
 
-* [base](lib/base.js)
-  * language constructs
-    * [ifThenElse](lib/base.js#L5) :: Bool -> * -> *
-  * elementary functions
-    * [succ](lib/base.js#L16) :: Number -> Number
-    * [min](lib/base.js#L21) :: Number -> Number -> Number
-    * [max](lib/base.js#L30) :: Number -> Number -> Number
-    * [add](lib/base.js#L39) :: Number -> Number -> Number
-    * [subtract](lib/base.js#L44) :: Number -> Number -> Number
-    * [div](lib/base.js#L49) :: Int -> Int -> Int
-  * list functions
-    * [empty](lib/base.js#L56) :: [a] -> Bool
-    * [index](lib/base.js#L61) :: [a] -> Int -> a
-    * [length](lib/base.js#L66) :: [a] -> Int
-    * [head](lib/base.js#L71) :: [a] -> a
-    * [tail](lib/base.js#L76) :: [a] -> [a]
-    * [last](lib/base.js#L81) :: [a] -> a
-    * [init](lib/base.js#L86) :: [a] -> [a]
-    * [reduce](lib/base.js#L91) :: (a -> b -> a) -> a -> [b] -> a
-    * [cons](lib/base.js#L100) :: a -> [a] -> [a]
-    * [append](lib/base.js#L105) :: [a] -> [a] -> [a]
-    * [sum](lib/base.js#L110) :: [Number] -> Number
+* [core](lib/core.js)
+  * [curry](lib/core.js#L12)
+  * [compose](lib/core.js#L5) (b -> c) -> (a -> b) -> a -> c
+  * [ifThenElse](lib/core.js#L5) :: Bool -> a -> a
+  * [not](lib/core.js#L5) :: Bool -> Bool
+
+All functions that take more than one parameter can be curried (applied with too
+few parameter to receive a function that takes the remaining parameters).
+
 
 Development
 ===========
