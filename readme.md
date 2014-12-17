@@ -46,11 +46,13 @@ Functions covered
   * [not](lib/core.js#L5) :: Bool -> Bool
 * [base](lib/base.js)
   * [succ](lib/base.js#L3) :: Number -> Number
-  * [min](lib/base.js#L9) :: Number -> Number -> Number
-  * [max](lib/base.js#L18) :: Number -> Number -> Number
-  * [add](lib/base.js#L27) :: Number -> Number -> Number
-  * [subtract](lib/base.js#L32) :: Number -> Number -> Number
-  * [div](lib/base.js#L37) :: Number -> Number -> Number
+  * [min](lib/base.js#L8) :: Number -> Number -> Number
+  * [max](lib/base.js#L17) :: Number -> Number -> Number
+  * [add](lib/base.js#L26) :: Number -> Number -> Number
+  * [subtract](lib/base.js#L31) :: Number -> Number -> Number
+  * [div](lib/base.js#L36) :: Number -> Number -> Number
+* [list](lib/list.js)
+  * [length](lib/list.js#L3) :: [a] -> Int
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
