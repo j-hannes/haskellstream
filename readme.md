@@ -23,7 +23,7 @@ Curry:
 var hs = require('haskellstream');
 var curry = hs.core.curry
 
-var pair = function(a, b) {return [a, b])
+var pair = curry(function(a, b) {return [a, b]})
 
 var pairWithTwo = pair(2)
 console.log(pairWithTwo) // [Function]
