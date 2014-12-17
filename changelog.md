@@ -1,3 +1,11 @@
+0.2.0
+-----
+
+* remove base module (and all functions)
+* create core module that contains `curry`, `compose`, `ifThenElse` and `not`
+* functions now have module namespace, e.g. `hs.core.compose`, also see readme
+* remove dependency from ramda library
+
 0.1.0
 -----
 
