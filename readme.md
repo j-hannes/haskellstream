@@ -54,6 +54,10 @@ Functions covered
 * [list](lib/list.js)
   * [length](lib/list.js#L3) :: [a] -> Int
   * [empty](lib/list.js#L8) :: [a] -> Bool
+  * [head](lib/list.js#L13) :: [a] -> a
+  * [last](lib/list.js#L18) :: [a] -> a
+  * [init](lib/list.js#L23) :: [a] -> [a]
+  * [tail](lib/list.js#L28) :: [a] -> [a]
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
