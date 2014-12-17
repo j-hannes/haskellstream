@@ -1,4 +1,4 @@
-var base = require('./lib/base')
+var core = require('./lib/core')
 
-module.exports = base
+exports.core = core
 
