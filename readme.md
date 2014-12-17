@@ -44,6 +44,13 @@ Functions covered
   * [compose](lib/core.js#L5) (b -> c) -> (a -> b) -> a -> c
   * [ifThenElse](lib/core.js#L5) :: Bool -> a -> a
   * [not](lib/core.js#L5) :: Bool -> Bool
+* [base](lib/base.js)
+  * [succ](lib/base.js#L3)
+  * [min](lib/base.js#L9)
+  * [max](lib/base.js#L18)
+  * [add](lib/base.js#L27)
+  * [subtract](lib/base.js#L32)
+  * [div](lib/base.js#L37)
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).

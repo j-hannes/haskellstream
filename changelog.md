@@ -1,3 +1,14 @@
+0.2.1
+-----
+
+* recreate base module
+* readded base.succ
+* readded base.min
+* readded base.max
+* readded base.add
+* readded base.subtract
+* readded base.div
+
 0.2.0
 -----
 
