@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/j-hannes/haskellstream",
   "devDependencies": {
-    "chai": "^1.10.0"
+    "chai": "^1.10.0",
+    "repl.history": "^0.1.2"
   },
   "dependencies": {}
 }
