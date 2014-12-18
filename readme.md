@@ -70,6 +70,7 @@ Functions covered
   * [compose](lib/core.js#L32) (b -> c) -> (a -> b) -> a -> c
   * [ifThenElse](lib/core.js#L40) :: Bool -> a -> a
   * [not](lib/core.js#L52) :: Bool -> Bool
+  * [flip](lib/core.js#L61) :: (a -> b -> c) -> b -> a -> c
 * [base](lib/base.js)
   * [succ](lib/base.js#L3) :: Number -> Number
   * [min](lib/base.js#L8) :: Number -> Number -> Number
