@@ -4,6 +4,7 @@ var expect = require('chai').expect
 // import functions
 var hs = require('../hs')
 var add = hs.base.add
+var greaterThan = hs.base.greaterThan
 var length = hs.list.length
 var empty = hs.list.empty
 var head = hs.list.head
@@ -16,6 +17,7 @@ var reduce = hs.list.reduce
 var sum = hs.list.sum
 var append = hs.list.append
 var range = hs.list.range
+var filter = hs.list.filter
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -140,6 +142,13 @@ describe('list module', function() {
   describe('range(1,2.5)', function() {
     it('returns [1,2]', function() {
       expect(range(1,2)).to.be.deep.equal([1,2])
+    })
+  })
+  describe('filter(greaterThan(2), [1,2,3,4])', function() {
+    it('returns [3,4]', function() {
+      var xs = [1,2,3,4]
+      expect(filter(greaterThan(2), xs)).to.be.deep.equal([3,4])
+      expect(xs).to.be.deep.equal([1,2,3,4])
     })
   })
 })
