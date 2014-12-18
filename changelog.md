@@ -2,7 +2,7 @@
 -----
 
 * create list module
-* added length function
+* readded length function
 * readded empty function
 * readded head function
 * readded last function
