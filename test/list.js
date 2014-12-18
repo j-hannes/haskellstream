@@ -3,6 +3,7 @@ var expect = require('chai').expect
 
 // import functions
 var hs = require('../hs')
+var add = hs.base.add
 var length = hs.list.length
 var empty = hs.list.empty
 var head = hs.list.head
@@ -11,6 +12,9 @@ var init = hs.list.init
 var tail = hs.list.tail
 var index = hs.list.index
 var cons = hs.list.cons
+var reduce = hs.list.reduce
+var sum = hs.list.sum
+var append = hs.list.append
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -82,6 +86,39 @@ describe('list module', function() {
       var prependOne = cons(1)
       expect(prependOne).to.be.a('function')
       expect(prependOne([2,3])).to.be.deep.equal([1,2,3])
+    })
+  })
+  describe('reduce(add, 0, [1,2,3,4])', function() {
+    it('returns 10', function() {
+      var xs = [1,2,3,4]
+      expect(reduce(add, 0, xs)).to.be.equal(10)
+      expect(xs).to.be.deep.equal([1,2,3,4])
+    })
+    it('is curryable', function() {
+      var sum = reduce(add, 0)
+      expect(sum).to.be.a('function')
+      expect(sum([1,2,3,4])).to.be.equal(10)
+    })
+  })
+  describe('sum([1,2,3,4,5])', function() {
+    it('returns 15', function() {
+      var xs = [1,2,3,4,5]
+      expect(sum(xs)).to.be.equal(15)
+      expect(xs).to.be.deep.equal([1,2,3,4,5])
+    })
+  })
+  describe('append([1,2],[3,4])', function() {
+    it('returns [1,2,3,4]', function() {
+      var xs = [1,2]
+      var ys = [3,4]
+      expect(append(xs,ys)).to.be.deep.equal([1,2,3,4])
+      expect(xs).to.be.deep.equal([1,2])
+      expect(ys).to.be.deep.equal([3,4])
+    })
+    it('is curryable', function() {
+      var appendToMyList = append([1,2])
+      expect(appendToMyList).to.be.a('function')
+      expect(appendToMyList([3,4])).to.be.deep.equal([1,2,3,4])
     })
   })
 })
