@@ -63,6 +63,7 @@ Functions covered
   * [reduce](lib/list.js#L44) :: (a -> b -> b) -> b -> [a] -> b
   * [sum](lib/list.js#L53) :: [Int] -> Int
   * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
+  * [range](lib/list.js#L61) :: Int -> Int -> [Int]
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
