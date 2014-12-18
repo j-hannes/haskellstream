@@ -10,6 +10,7 @@ var div = hs.base.div
 var add = hs.base.add
 var subtract = hs.base.subtract
 var lessEqual = hs.base.lessEqual
+var greaterThan = hs.base.greaterThan
 
 describe('base', function() {
   describe('succ(8)', function() {
@@ -70,6 +71,21 @@ describe('base', function() {
   describe('lessEqual(3, 1)', function() {
     it('returns false', function() {
       expect(lessEqual(3,1)).to.be.false
+    })
+  })
+  describe('greaterThan(4, 10)', function() {
+    it('returns true', function() {
+      expect(greaterThan(4,10)).to.be.false
+    })
+  })
+  describe('greaterThan(2, 2)', function() {
+    it('returns true', function() {
+      expect(greaterThan(2,2)).to.be.false
+    })
+  })
+  describe('greaterThan(3, 1)', function() {
+    it('returns false', function() {
+      expect(greaterThan(3,1)).to.be.true
     })
   })
 
