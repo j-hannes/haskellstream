@@ -46,11 +46,23 @@ Functions covered
   * [not](lib/core.js#L52) :: Bool -> Bool
 * [base](lib/base.js)
   * [succ](lib/base.js#L3) :: Number -> Number
-  * [min](lib/base.js#L9) :: Number -> Number -> Number
-  * [max](lib/base.js#L18) :: Number -> Number -> Number
-  * [add](lib/base.js#L27) :: Number -> Number -> Number
-  * [subtract](lib/base.js#L32) :: Number -> Number -> Number
-  * [div](lib/base.js#L37) :: Number -> Number -> Number
+  * [min](lib/base.js#L8) :: Number -> Number -> Number
+  * [max](lib/base.js#L17) :: Number -> Number -> Number
+  * [add](lib/base.js#L26) :: Number -> Number -> Number
+  * [subtract](lib/base.js#L31) :: Number -> Number -> Number
+  * [div](lib/base.js#L36) :: Number -> Number -> Number
+* [list](lib/list.js)
+  * [length](lib/list.js#L3) :: [a] -> Int
+  * [empty](lib/list.js#L8) :: [a] -> Bool
+  * [head](lib/list.js#L13) :: [a] -> a
+  * [last](lib/list.js#L18) :: [a] -> a
+  * [init](lib/list.js#L23) :: [a] -> [a]
+  * [tail](lib/list.js#L28) :: [a] -> [a]
+  * [index](lib/list.js#L33) :: [a] -> Int -> a
+  * [cons](lib/list.js#L38) :: a -> [a] -> [a]
+  * [reduce](lib/list.js#L44) :: (a -> b -> b) -> b -> [a] -> b
+  * [sum](lib/list.js#L53) :: [Int] -> Int
+  * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).

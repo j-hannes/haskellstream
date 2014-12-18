@@ -1,3 +1,19 @@
+0.2.2
+-----
+
+* create list module
+* readded length function
+* readded empty function
+* readded head function
+* readded last function
+* readded init function
+* readded tail function
+* readded index function
+* readded cons function
+* readded reduce function
+* readded sum function
+* readded append function
+
 0.2.1
 -----
 
