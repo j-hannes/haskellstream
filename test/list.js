@@ -15,6 +15,7 @@ var cons = hs.list.cons
 var reduce = hs.list.reduce
 var sum = hs.list.sum
 var append = hs.list.append
+var range = hs.list.range
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -119,6 +120,26 @@ describe('list module', function() {
       var appendToMyList = append([1,2])
       expect(appendToMyList).to.be.a('function')
       expect(appendToMyList([3,4])).to.be.deep.equal([1,2,3,4])
+    })
+  })
+  describe('range(1,5)', function() {
+    it('returns [1,2,3,4,5]', function() {
+      expect(range(1,5)).to.be.deep.equal([1,2,3,4,5])
+    })
+    it('is curryable', function() {
+      var rangeFromOne = range(1)
+      expect(rangeFromOne).to.be.a('function')
+      expect(rangeFromOne(5)).to.be.deep.equal([1,2,3,4,5])
+    })
+  })
+  describe('range(5,1)', function() {
+    it('returns [5,4,3,2,1]', function() {
+      expect(range(5,1)).to.be.deep.equal([5,4,3,2,1])
+    })
+  })
+  describe('range(1,2.5)', function() {
+    it('returns [1,2]', function() {
+      expect(range(1,2)).to.be.deep.equal([1,2])
     })
   })
 })
