@@ -40,7 +40,7 @@ var compose = hs.core.compose
 var doubleIt = function(x) {return x + x}
 var addThree = add(3)
 
-var doubleAndAddThree = compose(doubleIt, addThree)
+var doubleAndAddThree = compose(addThree, doubleIt)
 console.log(doubleAndAddThree(5)) // 13
 ```
 
@@ -106,11 +106,11 @@ Run `./hsci` to have haskellstream loaded in node's repl.
 ToDo
 ----
 
-For now I am trying to create the base (prelude, which should be named base)
-module. This will be followed by other modules (list, ...).
-
-Re types I will see what is possible to implement. Functors, Monads etc. will
-probably work but not sure how it does with type classes.
+* have a look at reduce, append functions, compare with WhyFP
+* reduce is actually foldr, should it be foldl??
+* add functions to hsci so they can be used out of the box
+* implement functors
+* add streams
 
 Testing
 -------
