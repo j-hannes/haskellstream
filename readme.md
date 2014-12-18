@@ -30,6 +30,32 @@ console.log(pairWithTwo) // [Function]
 console.log(pairWithTwo(3)) // [2,3]
 ```
 
+Compose:
+
+```JavaScript
+var hs = require('haskellstream');
+var add = hs.base.add
+var compose = hs.core.compose
+
+var doubleIt = function(x) {return x + x}
+var addThree = add(3)
+
+var doubleAndAddThree = compose(doubleIt, addThree)
+console.log(doubleAndAddThree(5)) // 13
+```
+
+Reduce:
+
+```JavaScript
+var hs = require('haskellstream');
+var add = hs.base.add
+var reduce = hs.list.reduce
+var range = hs.list.range
+
+var sum = reduce(add, 0)
+console.log(sum(range(1,100))) // 5050
+```
+
 In comparison to Haskell JavaScript is already cluttered up with lots of
 parenthesis commas etc. and that imported functions are usually namespaced. This
 noise can be reduced by assigning functions from their namespace to their plain
