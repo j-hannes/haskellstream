@@ -9,6 +9,7 @@ var max = hs.base.max
 var div = hs.base.div
 var add = hs.base.add
 var subtract = hs.base.subtract
+var lessEqual = hs.base.lessEqual
 
 describe('base', function() {
   describe('succ(8)', function() {
@@ -56,4 +57,20 @@ describe('base', function() {
       expect(subtractTwo(3)).to.be.equal(1)
     })
   })
+  describe('lessEqual(4, 10)', function() {
+    it('returns true', function() {
+      expect(lessEqual(4,10)).to.be.true
+    })
+  })
+  describe('lessEqual(2, 2)', function() {
+    it('returns true', function() {
+      expect(lessEqual(2,2)).to.be.true
+    })
+  })
+  describe('lessEqual(3, 1)', function() {
+    it('returns false', function() {
+      expect(lessEqual(3,1)).to.be.false
+    })
+  })
+
 })
