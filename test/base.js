@@ -59,8 +59,8 @@ describe('base', function() {
     })
   })
   describe('lessEqual(4, 10)', function() {
-    it('returns true', function() {
-      expect(lessEqual(4,10)).to.be.true
+    it('returns false', function() {
+      expect(lessEqual(4,10)).to.be.false
     })
   })
   describe('lessEqual(2, 2)', function() {
@@ -69,23 +69,23 @@ describe('base', function() {
     })
   })
   describe('lessEqual(3, 1)', function() {
-    it('returns false', function() {
-      expect(lessEqual(3,1)).to.be.false
+    it('returns true', function() {
+      expect(lessEqual(3,1)).to.be.true
     })
   })
   describe('greaterThan(4, 10)', function() {
     it('returns true', function() {
-      expect(greaterThan(4,10)).to.be.false
+      expect(greaterThan(4,10)).to.be.true
     })
   })
   describe('greaterThan(2, 2)', function() {
-    it('returns true', function() {
+    it('returns false', function() {
       expect(greaterThan(2,2)).to.be.false
     })
   })
   describe('greaterThan(3, 1)', function() {
     it('returns false', function() {
-      expect(greaterThan(3,1)).to.be.true
+      expect(greaterThan(3,1)).to.be.false
     })
   })
 
