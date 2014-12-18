@@ -13,6 +13,7 @@
 * readded reduce function
 * readded sum function
 * readded append function
+* added range function
 
 0.2.1
 -----
