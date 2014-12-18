@@ -20,7 +20,7 @@ Examples
 Curry:
 
 ```JavaScript
-var hs = require('haskellstream');
+var hs = require('haskellstream')
 var curry = hs.core.curry
 
 var pair = curry(function(a, b) {return [a, b]})
@@ -33,7 +33,7 @@ console.log(pairWithTwo(3)) // [2,3]
 Compose:
 
 ```JavaScript
-var hs = require('haskellstream');
+var hs = require('haskellstream')
 var add = hs.base.add
 var compose = hs.core.compose
 
@@ -47,7 +47,7 @@ console.log(doubleAndAddThree(5)) // 13
 Reduce:
 
 ```JavaScript
-var hs = require('haskellstream');
+var hs = require('haskellstream')
 var add = hs.base.add
 var reduce = hs.list.reduce
 var range = hs.list.range
