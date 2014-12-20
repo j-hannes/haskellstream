@@ -9,7 +9,7 @@
 * added list.n.appendN
 * added sort module
 * added sort.quicksort
-* added repl.history
+* added repl history to hsci
 
 0.2.2
 -----
