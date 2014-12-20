@@ -94,6 +94,8 @@ Functions covered
   * [range](lib/list.js#L70) :: Int -> Int -> [Int]
 * [list.n](lib/list.n.js)
   * [appendN](lib/list.n.js#L3) :: ([a],[a],...) -> [a]
+* [sort](lib/sort.js)
+  * [quicksort](lib/sort.js#L32) :: [a] -> [a]
 
 
 All functions that take more than one parameter can be curried (applied with too

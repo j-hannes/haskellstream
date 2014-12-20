@@ -5,6 +5,8 @@
 * added list.concat
 * created list.n module for operator-like use of functions
 * added list.n.appendN
+* added sort module
+* added sort.quicksort
 
 0.2.2
 -----
