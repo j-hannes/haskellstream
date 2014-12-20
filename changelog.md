@@ -1,6 +1,8 @@
 0.2.3
 -----
 
+* added base.lessEqual
+* added base.greaterThan
 * added core.flip
 * added list.concat
 * created list.n module for operator-like use of functions

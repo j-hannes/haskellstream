@@ -78,6 +78,8 @@ Functions covered
   * [add](lib/base.js#L26) :: Number -> Number -> Number
   * [subtract](lib/base.js#L31) :: Number -> Number -> Number
   * [div](lib/base.js#L36) :: Number -> Number -> Number
+  * [lessEqual](lib/base.js#L41) :: Number -> Number -> Bool
+  * [greaterThan](lib/base.js#L46) :: Number -> Number -> Bool
 * [list](lib/list.js)
   * [length](lib/list.js#L3) :: [a] -> Int
   * [empty](lib/list.js#L8) :: [a] -> Bool
