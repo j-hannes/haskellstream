@@ -92,6 +92,8 @@ Functions covered
   * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
   * [concat](lib/list.js#L61) :: [[a]] -> [a]
   * [range](lib/list.js#L70) :: Int -> Int -> [Int]
+* [list.n](lib/list.n.js)
+  * [appendN](lib/list.js#L64) :: ([a],[a],...) -> [a]
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).

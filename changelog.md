@@ -3,6 +3,8 @@
 
 * added core.flip
 * added list.concat
+* created list.n module for operator-like use of functions
+* added list.n.appendN
 
 0.2.2
 -----
