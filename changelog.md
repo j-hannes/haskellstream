@@ -1,3 +1,8 @@
+0.2.4
+-----
+
+* added functions to hsci so they can be used out of the box
+
 0.2.3
 -----
 

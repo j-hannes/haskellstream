@@ -118,7 +118,6 @@ ToDo
 
 * check why mocha-clean is not working
 * correct line numbers in source code reference from readme
-* add functions to hsci so they can be used out of the box
 * implement functors
 * add streams
 
