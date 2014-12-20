@@ -115,8 +115,8 @@ Run `./hsci` to have haskellstream loaded in node's repl.
 ToDo
 ----
 
-* have a look at reduce, append functions, compare with WhyFP
-* reduce is actually foldr, should it be foldl??
+* check why mocha-clean is not working
+* correct line numbers in source code reference from readme
 * add functions to hsci so they can be used out of the box
 * implement functors
 * add streams
