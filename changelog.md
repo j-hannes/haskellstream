@@ -9,6 +9,7 @@
 * added list.n.appendN
 * added sort module
 * added sort.quicksort
+* added repl.history
 
 0.2.2
 -----
