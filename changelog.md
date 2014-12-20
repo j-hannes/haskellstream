@@ -2,6 +2,7 @@
 -----
 
 * added core.flip
+* added list.concat
 
 0.2.2
 -----
