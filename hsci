@@ -8,6 +8,7 @@ var c = hs.core
 var replServer = repl.start({
   prompt: 'hsci> ',
 })
+require('repl.history')(replServer, process.env.HOME + '/.node_history')
 
 replServer.context.hs = hs
 replServer.context.c = c
