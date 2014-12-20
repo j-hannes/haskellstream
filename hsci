@@ -10,6 +10,33 @@ var replServer = repl.start({
 })
 require('repl.history')(replServer, process.env.HOME + '/.node_history')
 
-replServer.context.hs = hs
-replServer.context.c = c
+replServer.context.curry = hs.core.curry
+replServer.context.compose = hs.core.compose
+replServer.context.ifThenElse = hs.core.ifThenElse
+replServer.context.not = hs.core.not
+replServer.context.flip = hs.core.flip
+replServer.context.succ = hs.base.flip
+replServer.context.min = hs.base.min
+replServer.context.max = hs.base.max
+replServer.context.add = hs.base.add
+replServer.context.subtract = hs.base.add
+replServer.context.div = hs.base.div
+replServer.context.lessEqual = hs.base.lessEqual
+replServer.context.greaterThan = hs.base.greaterThan
+replServer.context.length = hs.list.length
+replServer.context.empty = hs.list.empty
+replServer.context.head = hs.list.head
+replServer.context.last = hs.list.last
+replServer.context.init = hs.list.init
+replServer.context.tail = hs.list.tail
+replServer.context.index = hs.list.index
+replServer.context.cons = hs.list.cons
+replServer.context.reduce = hs.list.reduce
+replServer.context.sum = hs.list.sum
+replServer.context.append = hs.list.append
+replServer.context.concat = hs.list.concat
+replServer.context.range = hs.list.range
+replServer.context.filter = hs.list.filter
+replServer.context.appendN = hs.list.n.appendN
+replServer.context.sort = hs.list.quicksort
 
