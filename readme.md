@@ -103,14 +103,15 @@ Functions covered
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
 
-
-Development
-===========
-
 Command Line Interface / REPL
 -----------------------------
 
-Run `./hsci` to have haskellstream loaded in node's repl.
+Run `./hsci` to have all functions already loaded in node's repl. It supports a
+command line history (via npm package repl.history).
+
+
+Development
+===========
 
 ToDo
 ----
