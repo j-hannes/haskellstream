@@ -1,3 +1,16 @@
+0.2.3
+-----
+
+* added base.lessEqual
+* added base.greaterThan
+* added core.flip
+* added list.concat
+* created list.n module for operator-like use of functions
+* added list.n.appendN
+* added sort module
+* added sort.quicksort
+* added repl history to hsci
+
 0.2.2
 -----
 

@@ -6,6 +6,7 @@ var curry = require('../hs').core.curry
 var compose = require('../hs').core.compose
 var ifThenElse = require('../hs').core.ifThenElse
 var not = require('../hs').core.not
+var flip = require('../hs').core.flip
 
 describe('core', function() {
   describe('a curried function', function() {
@@ -45,6 +46,14 @@ describe('core', function() {
     })
     it('returns true for false', function() {
       expect(not(false)).to.be.true
+    })
+  })
+  describe('flip', function() {
+    it('swaps the (two) parameters of a passed in function', function() {
+      var div = function(a, b) {return a / b}
+      expect(div(8,4)).to.be.equal(2)
+      expect(flip(div, 8, 4)).to.be.equal(0.5)
+      expect(flip(div)(8)(4)).to.be.equal(0.5)
     })
   })
 })

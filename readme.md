@@ -70,6 +70,7 @@ Functions covered
   * [compose](lib/core.js#L32) (b -> c) -> (a -> b) -> a -> c
   * [ifThenElse](lib/core.js#L40) :: Bool -> a -> a
   * [not](lib/core.js#L52) :: Bool -> Bool
+  * [flip](lib/core.js#L61) :: (a -> b -> c) -> b -> a -> c
 * [base](lib/base.js)
   * [succ](lib/base.js#L3) :: Number -> Number
   * [min](lib/base.js#L8) :: Number -> Number -> Number
@@ -77,6 +78,8 @@ Functions covered
   * [add](lib/base.js#L26) :: Number -> Number -> Number
   * [subtract](lib/base.js#L31) :: Number -> Number -> Number
   * [div](lib/base.js#L36) :: Number -> Number -> Number
+  * [lessEqual](lib/base.js#L41) :: Number -> Number -> Bool
+  * [greaterThan](lib/base.js#L46) :: Number -> Number -> Bool
 * [list](lib/list.js)
   * [length](lib/list.js#L3) :: [a] -> Int
   * [empty](lib/list.js#L8) :: [a] -> Bool
@@ -89,7 +92,13 @@ Functions covered
   * [reduce](lib/list.js#L44) :: (a -> b -> b) -> b -> [a] -> b
   * [sum](lib/list.js#L53) :: [Int] -> Int
   * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
-  * [range](lib/list.js#L61) :: Int -> Int -> [Int]
+  * [concat](lib/list.js#L61) :: [[a]] -> [a]
+  * [range](lib/list.js#L70) :: Int -> Int -> [Int]
+* [list.n](lib/list.n.js)
+  * [appendN](lib/list.n.js#L3) :: ([a],[a],...) -> [a]
+* [sort](lib/sort.js)
+  * [quicksort](lib/sort.js#L32) :: [a] -> [a]
+
 
 All functions that take more than one parameter can be curried (applied with too
 few parameter to receive a function that takes the remaining parameters).
