@@ -31,7 +31,7 @@ you from using function composition and currying in your application but is
 rather data-centered (see also the talk from Bryan Londsdorf "Hey Underscore,
 you're doing it wrong"). Then there is the really well documented ramda.js
 library. But this library even tho very nice designed, differs quite a bit of
-function use and naming from what we know from Haskell (Examples...).
+function use and naming from what we know from Haskell (take, drop etc.).
 
 So there we are with another library that you can integrate in you JavaScript
 programs. It is neither a new language now a framework, it is just JavaScript
