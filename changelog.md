@@ -2,6 +2,8 @@
 -----
 
 * added functions to hsci so they can be used out of the box
+* added list.foldl
+* added list.reverse
 
 0.2.3
 -----

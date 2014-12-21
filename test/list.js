@@ -19,6 +19,8 @@ var append = hs.list.append
 var range = hs.list.range
 var filter = hs.list.filter
 var concat = hs.list.concat
+var reverse = hs.list.reverse
+var foldl = hs.list.foldl
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -159,6 +161,25 @@ describe('list module', function() {
       var xs = [1,2,3,4]
       expect(filter(greaterThan(2), xs)).to.be.deep.equal([3,4])
       expect(xs).to.be.deep.equal([1,2,3,4])
+    })
+  })
+  describe('reverse([1,2,3,4,5])', function() {
+    it('returns [5,4,3,2,1]', function() {
+      var xs = [1,2,3,4,5]
+      expect(reverse(xs)).to.be.deep.equal([5,4,3,2,1])
+      expect(xs).to.be.deep.equal([1,2,3,4,5])
+    })
+  })
+  describe('foldl(add, 0, [1,2,3])', function() {
+    it('returns 6', function() {
+      var xs = [1,2,3]
+      expect(foldl(add, 0, xs)).to.be.equal(6)
+      expect(xs).to.be.deep.equal([1,2,3])
+    })
+    it('is curryable', function() {
+      var sum = foldl(add, 0)
+      expect(sum).to.be.a('function')
+      expect(sum([1,2,3])).to.be.equal(6)
     })
   })
 })

@@ -94,6 +94,8 @@ Functions covered
   * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
   * [concat](lib/list.js#L61) :: [[a]] -> [a]
   * [range](lib/list.js#L70) :: Int -> Int -> [Int]
+  * [foldl](lib/list.js#L93) :: (a -> b -> a) -> a -> [b] -> a
+  * [reverse](lib/list.js#L104) :: [a] -> [a]
 * [list.n](lib/list.n.js)
   * [appendN](lib/list.n.js#L3) :: ([a],[a],...) -> [a]
 * [sort](lib/sort.js)
