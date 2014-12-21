@@ -96,6 +96,7 @@ Functions covered
   * [range](lib/list.js#L70) :: Int -> Int -> [Int]
   * [foldl](lib/list.js#L93) :: (a -> b -> a) -> a -> [b] -> a
   * [reverse](lib/list.js#L104) :: [a] -> [a]
+  * [take](lib/list.js#107) :: Int -> [a] -> [a]
 * [sort](lib/sort.js)
   * [quicksort](lib/sort.js#L32) :: [a] -> [a]
 
