@@ -3,8 +3,6 @@ var base = require('./lib/base')
 var list = require('./lib/list')
 var sort = require('./lib/sort')
 
-list.n = require('./lib/list.n')
-
 exports.core = core
 exports.base = base
 exports.list = list

@@ -4,6 +4,7 @@
 * added functions to hsci so they can be used out of the box
 * added list.foldl
 * added list.reverse
+* removed list.n module (appendN can be replaced with concat)
 
 0.2.3
 -----

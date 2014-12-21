@@ -37,7 +37,6 @@ replServer.context.append = hs.list.append
 replServer.context.concat = hs.list.concat
 replServer.context.range = hs.list.range
 replServer.context.filter = hs.list.filter
-replServer.context.appendN = hs.list.n.appendN
 replServer.context.sort = hs.list.quicksort
 replServer.context.foldl = hs.list.foldl
 replServer.context.reverse = hs.list.reverse
