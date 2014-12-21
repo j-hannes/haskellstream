@@ -5,6 +5,7 @@
 * added list.foldl
 * added list.reverse
 * removed list.n module (appendN can be replaced with concat)
+* added motivation text (for wiki later or whatever)
 
 0.2.3
 -----
