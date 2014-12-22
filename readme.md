@@ -117,7 +117,6 @@ Development
 ToDo
 ----
 
-* check why mocha-clean is not working
 * correct line numbers in source code reference from readme
 * implement functors
 * add streams
