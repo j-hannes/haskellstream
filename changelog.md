@@ -7,6 +7,7 @@
 * removed list.n module (appendN can be replaced with concat)
 * added motivation text (for wiki later or whatever)
 * added list.take
+* [dev] use mocha-clean
 
 0.2.3
 -----
