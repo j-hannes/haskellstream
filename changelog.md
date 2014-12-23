@@ -9,10 +9,10 @@
 * added list.take
 * [dev] use mocha-clean
 * added list.drop
-* added minimum
-* added maximum
-* added multiply
-* added product
+* added list.minimum
+* added list.maximum
+* added base.multiply
+* added list.product
 
 0.2.3
 -----
@@ -23,6 +23,7 @@
 * added list.concat
 * created list.n module for operator-like use of functions
 * added list.n.appendN
+* added list.filter
 * added sort module
 * added sort.quicksort
 * added repl history to hsci

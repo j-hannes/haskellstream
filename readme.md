@@ -77,33 +77,34 @@ Functions covered
   * [max](lib/base.js#L17) :: Number -> Number -> Number
   * [add](lib/base.js#L26) :: Number -> Number -> Number
   * [multiply](lib/base.js#L31) :: Number -> Number -> Number
-  * [subtract](lib/base.js#L31) :: Number -> Number -> Number
-  * [div](lib/base.js#L36) :: Number -> Number -> Number
-  * [lessEqual](lib/base.js#L41) :: Number -> Number -> Bool
-  * [greaterThan](lib/base.js#L46) :: Number -> Number -> Bool
+  * [subtract](lib/base.js#L36) :: Number -> Number -> Number
+  * [div](lib/base.js#L41) :: Number -> Number -> Number
+  * [lessEqual](lib/base.js#L46) :: Number -> Number -> Bool
+  * [greaterThan](lib/base.js#L51) :: Number -> Number -> Bool
 * [list](lib/list.js)
-  * [length](lib/list.js#L3) :: [a] -> Int
-  * [empty](lib/list.js#L8) :: [a] -> Bool
-  * [head](lib/list.js#L13) :: [a] -> a
-  * [last](lib/list.js#L18) :: [a] -> a
-  * [init](lib/list.js#L23) :: [a] -> [a]
-  * [tail](lib/list.js#L28) :: [a] -> [a]
-  * [index](lib/list.js#L33) :: [a] -> Int -> a
-  * [cons](lib/list.js#L38) :: a -> [a] -> [a]
-  * [reduce](lib/list.js#L44) :: (a -> b -> b) -> b -> [a] -> b
-  * [sum](lib/list.js#L53) :: [Number] -> Number
-  * [product](lib/list.js#L53) :: [Number] -> Number
-  * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
-  * [concat](lib/list.js#L61) :: [[a]] -> [a]
-  * [range](lib/list.js#L70) :: Int -> Int -> [Int]
-  * [foldl](lib/list.js#L93) :: (a -> b -> a) -> a -> [b] -> a
-  * [reverse](lib/list.js#L104) :: [a] -> [a]
-  * [take](lib/list.js#L107) :: Int -> [a] -> [a]
-  * [drop](lib/list.js#L118) :: Int -> [a] -> [a]
-  * [minimum](lib/list.js#L129) :: [Number] -> Number
-  * [maximum](lib/list.js#L132) :: [Number] -> Number
+  * [length](lib/list.js#L8) :: [a] -> Int
+  * [empty](lib/list.js#L13) :: [a] -> Bool
+  * [head](lib/list.js#L18) :: [a] -> a
+  * [last](lib/list.js#L23) :: [a] -> a
+  * [init](lib/list.js#L28) :: [a] -> [a]
+  * [tail](lib/list.js#L33) :: [a] -> [a]
+  * [index](lib/list.js#L38) :: [a] -> Int -> a
+  * [cons](lib/list.js#L43) :: a -> [a] -> [a]
+  * [reduce](lib/list.js#L48) :: (a -> b -> b) -> b -> [a] -> b
+  * [sum](lib/list.js#L57) :: [Number] -> Number
+  * [product](lib/list.js#L60) :: [Number] -> Number
+  * [append](lib/list.js#L63) :: [a] -> [a] -> [a]
+  * [concat](lib/list.js#L68) :: [[a]] -> [a]
+  * [range](lib/list.js#L71) :: Int -> Int -> [Int]
+  * [filter](lib/list.js#L84) :: [a] -> (a -> Bool) -> [a]
+  * [foldl](lib/list.js#L99) :: (a -> b -> a) -> a -> [b] -> a
+  * [reverse](lib/list.js#L110) :: [a] -> [a]
+  * [take](lib/list.js#L113) :: Int -> [a] -> [a]
+  * [drop](lib/list.js#L124) :: Int -> [a] -> [a]
+  * [minimum](lib/list.js#L133) :: [Number] -> Number
+  * [maximum](lib/list.js#L136) :: [Number] -> Number
 * [sort](lib/sort.js)
-  * [quicksort](lib/sort.js#L32) :: [a] -> [a]
+  * [quicksort](lib/sort.js#L9) :: [a] -> [a]
 
 
 All functions that take more than one parameter can be curried (applied with too
