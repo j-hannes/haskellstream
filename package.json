@@ -1,6 +1,6 @@
 {
   "name": "haskellstream",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Small library to provide functional programming paradigms.",
   "main": "hs.js",
   "directories": {
