@@ -6,9 +6,10 @@ var hs = require('../hs')
 var succ = hs.base.succ
 var min = hs.base.min
 var max = hs.base.max
-var div = hs.base.div
 var add = hs.base.add
+var multiply = hs.base.multiply
 var subtract = hs.base.subtract
+var div = hs.base.div
 var lessEqual = hs.base.lessEqual
 var greaterThan = hs.base.greaterThan
 
@@ -33,11 +34,6 @@ describe('base', function() {
       expect(max(100,101)).to.be.equal(101)
     })
   })
-  describe('div(92, 10)', function() {
-    it('returns 9', function() {
-      expect(div(92,10)).to.be.equal(9)
-    })
-  })
   describe('add(1,2)', function() {
     it('returns 3', function() {
       expect(add(1,2)).to.be.equal(3)
@@ -48,6 +44,16 @@ describe('base', function() {
       expect(addOne(2)).to.be.equal(3)
     })
   })
+  describe('multiply(12,12)', function() {
+    it('returns 144', function() {
+      expect(multiply(12,12)).to.be.equal(144)
+    })
+    it('can be partially applied', function() {
+      var timesThree = multiply(3)
+      expect(timesThree).to.be.a('function')
+      expect(timesThree(12)).to.be.equal(36)
+    })
+  })
   describe('subtract(2,3)', function() {
     it('returns 1', function() {
       expect(subtract(2,3)).to.be.equal(1)
@@ -56,6 +62,11 @@ describe('base', function() {
       var subtractTwo = subtract(2)
       expect(subtractTwo).to.be.a('function')
       expect(subtractTwo(3)).to.be.equal(1)
+    })
+  })
+  describe('div(92, 10)', function() {
+    it('returns 9', function() {
+      expect(div(92,10)).to.be.equal(9)
     })
   })
   describe('lessEqual(4, 10)', function() {

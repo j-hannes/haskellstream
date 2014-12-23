@@ -11,6 +11,8 @@
 * added list.drop
 * added minimum
 * added maximum
+* added multiply
+* added product
 
 0.2.3
 -----

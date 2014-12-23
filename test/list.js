@@ -16,6 +16,7 @@ var index = hs.list.index
 var cons = hs.list.cons
 var reduce = hs.list.reduce
 var sum = hs.list.sum
+var product = hs.list.product
 var append = hs.list.append
 var range = hs.list.range
 var filter = hs.list.filter
@@ -116,6 +117,13 @@ describe('list module', function() {
       var xs = [1,2,3,4,5]
       expect(sum(xs)).to.be.equal(15)
       expect(xs).to.be.deep.equal([1,2,3,4,5])
+    })
+  })
+  describe('product([6,2,1,2])', function() {
+    it('returns 36', function() {
+      var xs = [6,2,1,2]
+      expect(product(xs)).to.be.equal(24)
+      expect(xs).to.be.deep.equal([6,2,1,2])
     })
   })
   describe('append([1,2],[3,4])', function() {

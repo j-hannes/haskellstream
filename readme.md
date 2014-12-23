@@ -76,6 +76,7 @@ Functions covered
   * [min](lib/base.js#L8) :: Number -> Number -> Number
   * [max](lib/base.js#L17) :: Number -> Number -> Number
   * [add](lib/base.js#L26) :: Number -> Number -> Number
+  * [multiply](lib/base.js#L31) :: Number -> Number -> Number
   * [subtract](lib/base.js#L31) :: Number -> Number -> Number
   * [div](lib/base.js#L36) :: Number -> Number -> Number
   * [lessEqual](lib/base.js#L41) :: Number -> Number -> Bool
@@ -90,7 +91,8 @@ Functions covered
   * [index](lib/list.js#L33) :: [a] -> Int -> a
   * [cons](lib/list.js#L38) :: a -> [a] -> [a]
   * [reduce](lib/list.js#L44) :: (a -> b -> b) -> b -> [a] -> b
-  * [sum](lib/list.js#L53) :: [Int] -> Int
+  * [sum](lib/list.js#L53) :: [Number] -> Number
+  * [product](lib/list.js#L53) :: [Number] -> Number
   * [append](lib/list.js#L56) :: [a] -> [a] -> [a]
   * [concat](lib/list.js#L61) :: [[a]] -> [a]
   * [range](lib/list.js#L70) :: Int -> Int -> [Int]
