@@ -9,6 +9,8 @@
 * added list.take
 * [dev] use mocha-clean
 * added list.drop
+* added minimum
+* added maximum
 
 0.2.3
 -----

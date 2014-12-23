@@ -98,6 +98,8 @@ Functions covered
   * [reverse](lib/list.js#L104) :: [a] -> [a]
   * [take](lib/list.js#L107) :: Int -> [a] -> [a]
   * [drop](lib/list.js#L118) :: Int -> [a] -> [a]
+  * [minimum](lib/list.js#L129) :: [Number] -> Number
+  * [maximum](lib/list.js#L132) :: [Number] -> Number
 * [sort](lib/sort.js)
   * [quicksort](lib/sort.js#L32) :: [a] -> [a]
 

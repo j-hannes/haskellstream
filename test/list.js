@@ -24,6 +24,8 @@ var reverse = hs.list.reverse
 var foldl = hs.list.foldl
 var take = hs.list.take
 var drop = hs.list.drop
+var maximum = hs.list.maximum
+var minimum = hs.list.minimum
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -216,6 +218,20 @@ describe('list module', function() {
   describe('drop(100, [1,2,3,4])', function() {
     it('returns []', function() {
       expect(drop(100, [1,2,3,4])).to.be.deep.equal([])
+    })
+  })
+  describe('maximum([1,9,2,3,4])', function() {
+    it('returns 0', function() {
+      var xs = [1,9,2,3,4]
+      expect(maximum(xs)).to.be.equal(9)
+      expect(xs).to.be.deep.equal([1,9,2,3,4])
+    })
+  })
+  describe('minimum([8,4,2,1,5,6])', function() {
+    it('returns 1', function() {
+      var xs = [8,4,2,1,5,6]
+      expect(minimum(xs)).to.be.equal(1)
+      expect(xs).to.be.deep.equal([8,4,2,1,5,6])
     })
   })
 })
