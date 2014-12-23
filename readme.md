@@ -123,9 +123,9 @@ Development
 ToDo
 ----
 
-* correct line numbers in source code reference from readme
 * implement functors
 * add streams
+* add build tool (gulp)
 
 Testing
 -------
