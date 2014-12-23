@@ -103,6 +103,7 @@ Functions covered
   * [drop](lib/list.js#L124) :: Int -> [a] -> [a]
   * [minimum](lib/list.js#L133) :: [Number] -> Number
   * [maximum](lib/list.js#L136) :: [Number] -> Number
+  * [elem](lib/list.js#L139) :: a -> [a] -> Bool
 * [sort](lib/sort.js)
   * [quicksort](lib/sort.js#L9) :: [a] -> [a]
 

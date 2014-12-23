@@ -27,6 +27,7 @@ var take = hs.list.take
 var drop = hs.list.drop
 var maximum = hs.list.maximum
 var minimum = hs.list.minimum
+var elem = hs.list.elem
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -240,6 +241,17 @@ describe('list module', function() {
       var xs = [8,4,2,1,5,6]
       expect(minimum(xs)).to.be.equal(1)
       expect(xs).to.be.deep.equal([8,4,2,1,5,6])
+    })
+  })
+  describe('elem(4, [3,4,5,6])', function() {
+    it('returns true', function() {
+      var xs = [3,4,5,6]
+      expect(elem(4, xs)).to.be.true
+      expect(xs).to.be.deep.equal([3,4,5,6])
+    })
+    it('is curryable', function() {
+      var containsFour = elem(4)
+      expect(containsFour([3,4,5,6])).to.be.true
     })
   })
 })
