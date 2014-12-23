@@ -10,7 +10,10 @@ var add = hs.base.add
 var multiply = hs.base.multiply
 var subtract = hs.base.subtract
 var div = hs.base.div
+var equal = hs.base.equal
 var lessEqual = hs.base.lessEqual
+var lessThan = hs.base.lessThan
+var greaterEqual = hs.base.greaterEqual
 var greaterThan = hs.base.greaterThan
 
 describe('base', function() {
@@ -69,12 +72,22 @@ describe('base', function() {
       expect(div(92,10)).to.be.equal(9)
     })
   })
-  describe('lessEqual(4, 10)', function() {
+  describe('equal(2, 2)', function() {
+    it('returns true', function() {
+      expect(equal(2,2)).to.be.true
+    })
+  })
+  describe('lessThan(2, 1)', function() {
+    it('returns true', function() {
+      expect(lessThan(2,1)).to.be.true
+    })
+  })
+  describe('lessEqual(4,10)', function() {
     it('returns false', function() {
       expect(lessEqual(4,10)).to.be.false
     })
   })
-  describe('lessEqual(2, 2)', function() {
+  describe('lessEqual(2,2)', function() {
     it('returns true', function() {
       expect(lessEqual(2,2)).to.be.true
     })
@@ -82,6 +95,11 @@ describe('base', function() {
   describe('lessEqual(3, 1)', function() {
     it('returns true', function() {
       expect(lessEqual(3,1)).to.be.true
+    })
+  })
+  describe('greaterEqual(2, 3)', function() {
+    it('returns true', function() {
+      expect(greaterEqual(2,3)).to.be.true
     })
   })
   describe('greaterThan(4, 10)', function() {

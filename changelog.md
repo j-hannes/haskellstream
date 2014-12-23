@@ -2,6 +2,9 @@
 -----
 
 * added list.elem
+* added base.equal
+* added base.lessThan
+* added base.greaterEqual
 
 0.2.4
 -----

@@ -79,8 +79,11 @@ Functions covered
   * [multiply](lib/base.js#L31) :: Number -> Number -> Number
   * [subtract](lib/base.js#L36) :: Number -> Number -> Number
   * [div](lib/base.js#L41) :: Number -> Number -> Number
-  * [lessEqual](lib/base.js#L46) :: Number -> Number -> Bool
-  * [greaterThan](lib/base.js#L51) :: Number -> Number -> Bool
+  * [equal](lib/base.js#L46) :: a -> a -> Bool
+  * [lessEqual](lib/base.js#L51) :: a -> a -> Bool
+  * [lessThan](lib/base.js#L56) :: a -> a -> Bool
+  * [greaterEqual](lib/base.js#L61) :: a -> a -> Bool
+  * [greaterThan](lib/base.js#L66) :: a -> a -> Bool
 * [list](lib/list.js)
   * [length](lib/list.js#L8) :: [a] -> Int
   * [empty](lib/list.js#L13) :: [a] -> Bool
