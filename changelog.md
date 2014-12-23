@@ -8,6 +8,7 @@
 * added motivation text (for wiki later or whatever)
 * added list.take
 * [dev] use mocha-clean
+* added list.drop
 
 0.2.3
 -----

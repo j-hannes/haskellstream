@@ -5,6 +5,7 @@ var expect = require('chai').expect
 var hs = require('../hs')
 var add = hs.base.add
 var greaterThan = hs.base.greaterThan
+
 var length = hs.list.length
 var empty = hs.list.empty
 var head = hs.list.head
@@ -22,6 +23,7 @@ var concat = hs.list.concat
 var reverse = hs.list.reverse
 var foldl = hs.list.foldl
 var take = hs.list.take
+var drop = hs.list.drop
 
 describe('list module', function() {
   describe('length([1,3])', function() {
@@ -198,6 +200,22 @@ describe('list module', function() {
   describe('take(5, [1,2])', function() {
     it('returns [1,2]', function() {
       expect(take(5, [1,2])).to.be.deep.equal([1,2])
+    })
+  })
+  describe('drop(3, [8,4,2,1,5,6])', function() {
+    var xs = [8,4,2,1,5,6]
+    it('returns [1,5,6]', function() {
+      expect(drop(3, xs)).to.be.deep.equal([1,5,6])
+    })
+    it('is curryable', function() {
+      var dropFirstTwo = drop(2)
+      expect(dropFirstTwo).to.be.a('function')
+      expect(dropFirstTwo(xs)).to.be.deep.equal([2,1,5,6])
+    })
+  })
+  describe('drop(100, [1,2,3,4])', function() {
+    it('returns []', function() {
+      expect(drop(100, [1,2,3,4])).to.be.deep.equal([])
     })
   })
 })
